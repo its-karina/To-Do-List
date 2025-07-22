@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="theme-toggle" title="Toggle theme">🌙 Dark Mode</button>
+    <div id="cartoon-bg"></div>
+    <div class="container">
+        <h1>To-Do List <span>📝✨</span></h1>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+            <div id="progress-stats"></div>
+        </div>
+        <form id="task-form">
+            <input type="text" id="task-input" placeholder="Add new task..." required>
+            <select id="emoji-select" title="Choose an emoji">
+                <option value="📝">📝</option>
+                <option value="✅">✅</option>
+                <option value="📚">📚</option>
+                <option value="💼">💼</option>
+                <option value="🛒">🛒</option>
+                <option value="🎯">🎯</option>
+                <option value="🏃">🏃</option>
+                <option value="🍽️">🍽️</option>
+                <option value="🎉">🎉</option>
+                <option value="🧹">🧹</option>
+                <option value="🕒">🕒</option>
+                <option value="🌟">🌟</option>
+            </select>
+            <button type="submit"><span>➕</span> Add Task</button>
+        </form>
+        <ul id="task-list"></ul>
+        <div id="confetti"></div>
+        <audio id="complete-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b6c7b2b.mp3"></audio>
+        <audio id="add-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b6c7b2b.mp3"></audio>
+        <audio id="delete-sound" src="https://cdn.pixabay.com/audio/2022/03/15/audio_115b6c7b2b.mp3"></audio>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
